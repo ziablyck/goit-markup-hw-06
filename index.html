@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="description" />
     <title>goit-markup-hw-01</title>
     <link
@@ -47,7 +48,11 @@
             </li>
           </ul>
         </nav>
-
+        <button class="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="address-list">
             <li class="address-item">
@@ -70,7 +75,10 @@
       <section class="section-hero">
         <div class="container section-hero-container">
           <h1 class="section-hero-title">
-            Effective Solutions for Your Business
+            Effective Solutions <br class="transfer" />For Your<br
+              class="transfer"
+            />
+            Business
           </h1>
           <button class="btn">Order Service</button>
         </div>
@@ -144,7 +152,8 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/img.MarkGuerrero.jpg"
+                srcset="./images/team1img@2x-min.jpg 2x"
+                src="./images/team1img-min.jpg"
                 alt="team card 1"
                 width="264"
                 height="260"
@@ -187,7 +196,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img.TomFord.jpg"
+                srcset="./images/team2img@2x-min.jpg 2x"
+                src="./images/team2img-min.jpg"
                 alt="team card 1"
                 width="264"
                 height="260"
@@ -230,7 +240,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img.CamilaGarcia.jpg"
+                srcset="./images/team3img@2x-min.jpg 2x"
+                src="./images/team3img-min.jpg"
                 alt="team card 1"
                 width="264"
                 height="260"
@@ -273,7 +284,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img.DanielWilson.jpg"
+                srcset="./images/team4img@2x-min.jpg 2x"
+                src="./images/team4img-min.jpg"
                 alt="team card 1"
                 width="264"
                 height="260"
@@ -329,7 +341,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio1-min.jpg"
+                  srcset="
+                    ./images/card1mobimg-min.jpg    288w,
+                    ./images/card1img-min.jpg       360w,
+                    ./images/card1mobimg@2x-min.jpg 576w,
+                    ./images/card1img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card1img-min.jpg"
                   alt="banking app"
                   width="360"
                   height="300"
@@ -351,7 +370,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio2-min.jpg"
+                  srcset="
+                    ./images/card2mobimg-min.jpg    288w,
+                    ./images/card2img-min.jpg       360w,
+                    ./images/card2mobimg@2x-min.jpg 576w,
+                    ./images/card2img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card2img-min.jpg"
                   alt="cashless payment"
                   width="360"
                   height="300"
@@ -372,7 +398,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio3-min.jpg"
+                  srcset="
+                    ./images/card3mobimg-min.jpg    288w,
+                    ./images/card3img-min.jpg       360w,
+                    ./images/card3mobimg@2x-min.jpg 576w,
+                    ./images/card3img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card3img-min.jpg"
                   alt="meditation app"
                   width="360"
                   height="300"
@@ -393,7 +426,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio4-min.jpg"
+                  srcset="
+                    ./images/card4mobimg-min.jpg    288w,
+                    ./images/card4img-min.jpg       360w,
+                    ./images/card4mobimg@2x-min.jpg 576w,
+                    ./images/card4img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card4img-min.jpg"
                   alt="taxi"
                   width="360"
                   height="300"
@@ -414,7 +454,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio5-min.jpg"
+                  srcset="
+                    ./images/card5mobimg-min.jpg    288w,
+                    ./images/card5img-min.jpg       360w,
+                    ./images/card5mobimg@2x-min.jpg 576w,
+                    ./images/card5img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card5img-min.jpg"
                   alt="screen illustrations"
                   width="360"
                   height="300"
@@ -435,7 +482,14 @@
             <li class="portfolio-item">
               <div class="portfolio-img-box">
                 <img
-                  src="./images/portfolio6-min.jpg"
+                  srcset="
+                    ./images/card6mobimg-min.jpg    288w,
+                    ./images/card6img-min.jpg       360w,
+                    ./images/card6mobimg@2x-min.jpg 576w,
+                    ./images/card6img@2x-min.jpg    720w
+                  "
+                  sizes="(min-width: 768px) 360px, (max-width: 767px) 288px"
+                  src="./images/card6img-min.jpg"
                   alt="girl in headphones"
                   width="360"
                   height="300"
@@ -462,77 +516,80 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div class="logo-container">
-          <a class="footer-logo" href="./index.html"
-            >web<span class="footer-logo-black">Studio</span>
-          </a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
+        <div class="footer-nav-container">
+          <div class="logo-container">
+            <a class="footer-logo" href="./index.html"
+              >web<span class="footer-logo-black">Studio</span>
+            </a>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
 
-        <div class="footer-soc-container">
-          <p class="footer-text">Social media</p>
-          <ul class="footer-nav-link">
-            <li class="footer-icon-box">
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-box">
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-box">
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-box">
-              <a href="" class="footer-icon-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-soc-container">
+            <p class="footer-text">Social media</p>
+            <ul class="footer-nav-link">
+              <li class="footer-icon-box">
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-box">
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-box">
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-box">
+                <a href="" class="footer-icon-link">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-form-container">
-          <p class="footer-text">Subscribe</p>
-          <form class="footer-form">
-            <label class="footer-text" for="footer-subscribe-user-email">
-              <input
-                class="footer-subscribe-form"
-                type="email"
-                name="footer-subscribe-user-email"
-                id="footer-subscribe-user-email"
-                placeholder="E-mail"
-                required
-              />
-            </label>
-
-            <button class="footer-form-btn" type="submit">
-              Subscribe
-              <svg class="submit-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-Frame"></use>
-              </svg>
-            </button>
-          </form>
+        <div class="footer-subscribe-container">
+          <div class="footer-form-container">
+            <p class="footer-text">Subscribe</p>
+            <form class="footer-form">
+              <label class="footer-text" for="footer-subscribe-user-email">
+                <input
+                  class="footer-subscribe-form"
+                  type="email"
+                  name="footer-subscribe-user-email"
+                  id="footer-subscribe-user-email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+            </form>
+          </div>
+          <button class="footer-form-btn" type="submit">
+            Subscribe
+            <svg class="submit-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-Frame"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
 
     <!-- MODAL FORM-->
 
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
       <div class="modal">
         <button
           class="modal-clouse-btn"
@@ -622,7 +679,7 @@
                   <use href="./images/icons.svg#icon-click-check-form"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              I accept the terms and conditions of the <br class="new-line" />
               <a href="" class="user-accept">Privacy Policy</a>
             </label>
           </div>
@@ -631,6 +688,85 @@
             Send
           </button>
         </form>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu is-ope">
+      <div class="container mobile-menu-container">
+        <button
+          class="mobile-menu-clouse-btn"
+          type="button"
+          aria-label="mobile-menu-clouse-button"
+        >
+          <svg class="mobile-menu-clouse-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-form-icon"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a
+                class="mobile-menu-nav-link mobile-menu-nav-link-studio"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-item">
+              <a
+                class="mobile-menu-address-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a class="mobile-menu-address-link" href="tel:+110001111111"
+                >+11(000)111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-soc-icon-box">
+          <li class="mobile-menu-icon-box">
+            <a href="" class="mobile-menu-icon-link">
+              <svg class="mobile-menu-icon-link" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-box">
+            <a href="" class="mobile-menu-icon-link">
+              <svg class="mobile-menu-icon-link" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-box">
+            <a href="" class="mobile-menu-icon-link">
+              <svg class="mobile-menu-icon-link" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-box">
+            <a href="" class="mobile-menu-icon-link">
+              <svg class="mobile-menu-icon-link" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
